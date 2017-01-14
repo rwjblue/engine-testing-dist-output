@@ -1458,4 +1458,6 @@ define('ember-ajax/utils/url-helpers', ['exports', 'ember-ajax/utils/is-fastboot
 
   exports.RequestURL = RequestURL;
 });
-/* global require, module, URL *///# sourceMappingURL=engine-vendor.map
+/* global require, module, URL */
+;// lazy-in-eager/vendor/js/appimport.js
+//# sourceMappingURL=engine-vendor.map

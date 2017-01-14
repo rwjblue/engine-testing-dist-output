@@ -1,1 +1,1 @@
-{"version":3,"sources":["vendor/js/tree-invocation-order-thisimport.js"],"sourcesContent":["// tree-invocation-order/vendor/js/thisimport.js\n"],"names":[],"mappings":"AAAA;;","file":"engine-vendor.js"}
+{"version":3,"sources":["vendor/js/tree-invocation-order-thisimport.js","vendor/js/tree-invocation-order-appimport.js"],"sourcesContent":["// tree-invocation-order/vendor/js/thisimport.js\n","// tree-invocation-order/vendor/js/appimport.js\n"],"names":[],"mappings":"AAAA;;;ACAA;","file":"engine-vendor.js"}

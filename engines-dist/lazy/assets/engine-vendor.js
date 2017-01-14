@@ -1505,4 +1505,8 @@ define('ember-ajax/utils/url-helpers', ['exports', 'ember-ajax/utils/is-fastboot
 /* global require, module, URL */
 define("vanilla-addon-in-lazy/utils/utils-in-vanilla-addon", ["exports"], function (exports) {
   exports["default"] = {};
-});//# sourceMappingURL=engine-vendor.map
+});
+;// eager-in-lazy/vendor/js/appimport.js
+
+;// lazy/vendor/js/appimport.js
+//# sourceMappingURL=engine-vendor.map
