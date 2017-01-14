@@ -4,6 +4,10 @@ vanilla-addon-in-lazy/addon/styles/other.css
 
 vanilla-addon-in-lazy/addon/styles/addon.css
 
+eager-in-lazy/vendor/css/appimport.css
+
 eager-in-lazy/vendor/css/thisimport.css
+
+lazy/vendor/css/appimport.css
 
 lazy/vendor/css/thisimport.css
