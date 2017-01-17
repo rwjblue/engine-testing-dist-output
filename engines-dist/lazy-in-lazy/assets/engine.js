@@ -23,9 +23,6 @@ define('lazy-in-lazy/engine', ['exports', 'ember-engines/engine', 'ember-resolve
 
   exports['default'] = Eng;
 });
-define("lazy-in-lazy/lazy-in-lazy-import-target", ["exports"], function (exports) {
-  exports["default"] = {};
-});
 define("lazy-in-lazy/routes/lazy-in-lazy-route", ["exports"], function (exports) {
   exports["default"] = {};
 });

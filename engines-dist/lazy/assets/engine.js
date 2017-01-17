@@ -51,9 +51,6 @@ define('lazy/engine', ['exports', 'ember-engines/engine', 'ember-resolver', 'emb
 
   exports['default'] = Eng;
 });
-define("lazy/lazy-import-target", ["exports"], function (exports) {
-  exports["default"] = {};
-});
 define('lazy/lazy-in-lazy/tests/lazy-in-lazy/engine.lint-test', ['exports'], function (exports) {
   QUnit.module('ESLint - lazy-in-lazy/engine.js');
   QUnit.test('should pass ESLint', function (assert) {

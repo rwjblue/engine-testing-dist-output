@@ -28,7 +28,4 @@ define("tree-invocation-order/routes/tree-invocation-order-route", ["exports"], 
 });
 define("tree-invocation-order/templates/application", ["exports"], function (exports) {
   exports.default = Ember.HTMLBars.template({ "id": "oj+bZ0Be", "block": "{\"statements\":[[\"text\",\"tree-invocation-order/addon/templates/application.hbs\\n\"],[\"append\",[\"unknown\",[\"outlet\"]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "tree-invocation-order/templates/application.hbs" } });
-});
-define("tree-invocation-order/tree-invocation-order-import-target", ["exports"], function (exports) {
-  exports["default"] = {};
 });//# sourceMappingURL=engine.map

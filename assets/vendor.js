@@ -71173,6 +71173,9 @@ define('eager-in-eager/services/ajax', ['exports', 'ember-ajax/services/ajax'], 
 define("eager-in-eager/templates/application", ["exports"], function (exports) {
   exports.default = Ember.HTMLBars.template({ "id": "cJrW47py", "block": "{\"statements\":[[\"text\",\"eager-in-eager/addon/templates/application.hbs\\n\"],[\"append\",[\"unknown\",[\"outlet\"]],false],[\"text\",\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"blocks\":[],\"hasPartials\":false}", "meta": { "moduleName": "eager-in-eager/templates/application.hbs" } });
 });
+define("eager-in-lazy/eager-in-lazy-import-target", ["exports"], function (exports) {
+  exports["default"] = {};
+});
 define('eager-in-lazy/routes', ['exports', 'ember-engines/routes', 'eager-in-lazy/eager-in-lazy-import-target'], function (exports, _emberEnginesRoutes, _eagerInLazyEagerInLazyImportTarget) {
   exports['default'] = (0, _emberEnginesRoutes['default'])(function () {
     var result = _eagerInLazyEagerInLazyImportTarget['default'];
@@ -93695,17 +93698,26 @@ define('ember-resolver/utils/module-registry', ['exports', 'ember'], function (e
   exports['default'] = ModuleRegistry;
 });
 /*globals requirejs, require */
+define("lazy-in-eager/lazy-in-eager-import-target", ["exports"], function (exports) {
+  exports["default"] = {};
+});
 define('lazy-in-eager/routes', ['exports', 'ember-engines/routes', 'lazy-in-eager/lazy-in-eager-import-target'], function (exports, _emberEnginesRoutes, _lazyInEagerLazyInEagerImportTarget) {
   exports['default'] = (0, _emberEnginesRoutes['default'])(function () {
     var result = _lazyInEagerLazyInEagerImportTarget['default'];
     return result;
   });
 });
+define("lazy-in-lazy/lazy-in-lazy-import-target", ["exports"], function (exports) {
+  exports["default"] = {};
+});
 define('lazy-in-lazy/routes', ['exports', 'ember-engines/routes', 'lazy-in-lazy/lazy-in-lazy-import-target'], function (exports, _emberEnginesRoutes, _lazyInLazyLazyInLazyImportTarget) {
   exports['default'] = (0, _emberEnginesRoutes['default'])(function () {
     var result = _lazyInLazyLazyInLazyImportTarget['default'];
     return result;
   });
+});
+define("lazy/lazy-import-target", ["exports"], function (exports) {
+  exports["default"] = {};
 });
 define('lazy/routes', ['exports', 'ember-engines/routes', 'lazy/lazy-import-target'], function (exports, _emberEnginesRoutes, _lazyLazyImportTarget) {
   exports['default'] = (0, _emberEnginesRoutes['default'])(function () {
@@ -93718,6 +93730,9 @@ define('tree-invocation-order/routes', ['exports', 'ember-engines/routes', 'tree
     var result = _treeInvocationOrderTreeInvocationOrderImportTarget['default'];
     return result;
   });
+});
+define("tree-invocation-order/tree-invocation-order-import-target", ["exports"], function (exports) {
+  exports["default"] = {};
 });
 define("vanilla-addon-in-eager/utils/utils-in-vanilla-addon", ["exports"], function (exports) {
   exports["default"] = {};
