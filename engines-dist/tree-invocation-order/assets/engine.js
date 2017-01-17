@@ -11,12 +11,12 @@ define('tree-invocation-order/config/environment', ['exports'], function (export
 
   exports['default'] = config;
 });
-define('tree-invocation-order/engine', ['exports', 'ember-engines/engine', 'ember-engines/resolver', 'ember-load-initializers', 'tree-invocation-order/config/environment'], function (exports, _emberEnginesEngine, _emberEnginesResolver, _emberLoadInitializers, _treeInvocationOrderConfigEnvironment) {
+define('tree-invocation-order/engine', ['exports', 'ember-engines/engine', 'ember-resolver', 'ember-load-initializers', 'tree-invocation-order/config/environment'], function (exports, _emberEnginesEngine, _emberResolver, _emberLoadInitializers, _treeInvocationOrderConfigEnvironment) {
   var modulePrefix = _treeInvocationOrderConfigEnvironment['default'].modulePrefix;
 
   var Eng = _emberEnginesEngine['default'].extend({
     modulePrefix: modulePrefix,
-    Resolver: _emberEnginesResolver['default']
+    Resolver: _emberResolver['default']
   });
 
   (0, _emberLoadInitializers['default'])(Eng, modulePrefix);

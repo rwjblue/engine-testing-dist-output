@@ -39,12 +39,12 @@ define('lazy/eager-in-lazy/tests/eager-in-lazy/routes/eager-in-lazy-route.lint-t
     assert.ok(true, 'eager-in-lazy/routes/eager-in-lazy-route.js should pass ESLint.\n');
   });
 });
-define('lazy/engine', ['exports', 'ember-engines/engine', 'ember-engines/resolver', 'ember-load-initializers', 'lazy/config/environment'], function (exports, _emberEnginesEngine, _emberEnginesResolver, _emberLoadInitializers, _lazyConfigEnvironment) {
+define('lazy/engine', ['exports', 'ember-engines/engine', 'ember-resolver', 'ember-load-initializers', 'lazy/config/environment'], function (exports, _emberEnginesEngine, _emberResolver, _emberLoadInitializers, _lazyConfigEnvironment) {
   var modulePrefix = _lazyConfigEnvironment['default'].modulePrefix;
 
   var Eng = _emberEnginesEngine['default'].extend({
     modulePrefix: modulePrefix,
-    Resolver: _emberEnginesResolver['default']
+    Resolver: _emberResolver['default']
   });
 
   (0, _emberLoadInitializers['default'])(Eng, modulePrefix);

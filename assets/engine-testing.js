@@ -1,12 +1,8 @@
 "use strict";
 
-/* jshint ignore:start */
 
 
-
-/* jshint ignore:end */
-
-define('engine-testing/app', ['exports', 'ember', 'ember-engines/resolver', 'ember-load-initializers', 'engine-testing/config/environment'], function (exports, _ember, _emberEnginesResolver, _emberLoadInitializers, _engineTestingConfigEnvironment) {
+define('engine-testing/app', ['exports', 'ember', 'engine-testing/resolver', 'ember-load-initializers', 'engine-testing/config/environment'], function (exports, _ember, _engineTestingResolver, _emberLoadInitializers, _engineTestingConfigEnvironment) {
 
   var App = undefined;
 
@@ -15,7 +11,7 @@ define('engine-testing/app', ['exports', 'ember', 'ember-engines/resolver', 'emb
   App = _ember['default'].Application.extend({
     modulePrefix: _engineTestingConfigEnvironment['default'].modulePrefix,
     podModulePrefix: _engineTestingConfigEnvironment['default'].podModulePrefix,
-    Resolver: _emberEnginesResolver['default']
+    Resolver: _engineTestingResolver['default']
   });
 
   (0, _emberLoadInitializers['default'])(App, _engineTestingConfigEnvironment['default'].modulePrefix);
@@ -392,18 +388,10 @@ define('engine-testing/tree-invocation-order/tests/tree-invocation-order/tree-in
     assert.ok(true, 'tree-invocation-order/tree-invocation-order-import-target.js should pass ESLint.\n');
   });
 });
-/* jshint ignore:start */
 
-
-
-/* jshint ignore:end */
-
-/* jshint ignore:start */
 
 define('engine-testing/config/environment', ['ember'], function(Ember) {
   var prefix = 'engine-testing';
-/* jshint ignore:start */
-
 try {
   var metaName = prefix + '/config/environment';
   var rawConfig = document.querySelector('meta[name="' + metaName + '"]').getAttribute('content');
@@ -419,17 +407,9 @@ catch(err) {
   throw new Error('Could not read config from meta tag with name "' + metaName + '".');
 }
 
-/* jshint ignore:end */
-
 });
 
-/* jshint ignore:end */
-
-/* jshint ignore:start */
-
 if (!runningTests) {
-  require("engine-testing/app")["default"].create({"name":"engine-testing","version":"0.0.0+987f62a0"});
+  require("engine-testing/app")["default"].create({"name":"engine-testing","version":"0.0.0+9f626dfc"});
 }
-
-/* jshint ignore:end */
 //# sourceMappingURL=engine-testing.map

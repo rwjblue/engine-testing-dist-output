@@ -1,8 +1,4 @@
-/* jshint ignore:start */
 
-
-
-/* jshint ignore:end */
 
 /*!
  * QUnit 2.1.1
@@ -6656,8 +6652,6 @@ define("qunit", ["exports"], function (exports) {
   exports.only = only;
   exports["default"] = QUnit;
 });
-/* jshint ignore:start */
-
 runningTests = true;
 
 if (window.Testem) {
@@ -6665,6 +6659,4 @@ if (window.Testem) {
 }
 
 
-
-/* jshint ignore:end */
 //# sourceMappingURL=test-support.map

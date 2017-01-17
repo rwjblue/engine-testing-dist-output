@@ -1,5 +1,26 @@
 'use strict';
 
+define('engine-testing/tests/acceptance/application-test', ['exports', 'qunit', 'engine-testing/tests/helpers/module-for-acceptance'], function (exports, _qunit, _engineTestingTestsHelpersModuleForAcceptance) {
+
+  (0, _engineTestingTestsHelpersModuleForAcceptance['default'])('Acceptance | application');
+
+  (0, _qunit.test)('visiting /', function (assert) {
+    visit('/');
+
+    andThen(function () {
+      assert.equal(currentURL(), '/');
+    });
+  });
+});
+define('engine-testing/tests/acceptance/application-test.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('ESLint - acceptance/application-test.js');
+  QUnit.test('should pass ESLint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'acceptance/application-test.js should pass ESLint.\n');
+  });
+});
 define('engine-testing/tests/app.lint-test', ['exports'], function (exports) {
   'use strict';
 
@@ -135,10 +156,6 @@ define('engine-testing/tests/test-helper.lint-test', ['exports'], function (expo
     assert.ok(true, 'test-helper.js should pass ESLint.\n');
   });
 });
-/* jshint ignore:start */
-
 require('engine-testing/tests/test-helper');
 EmberENV.TESTS_FILE_LOADED = true;
-
-/* jshint ignore:end */
 //# sourceMappingURL=tests.map

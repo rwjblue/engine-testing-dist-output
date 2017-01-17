@@ -18,12 +18,12 @@
 define("eager-in-lazy/eager-in-lazy-import-target", ["exports"], function (exports) {
   exports["default"] = {};
 });
-define('eager-in-lazy/engine', ['exports', 'ember-engines/engine', 'ember-engines/resolver', 'ember-load-initializers', 'eager-in-lazy/config/environment'], function (exports, _emberEnginesEngine, _emberEnginesResolver, _emberLoadInitializers, _eagerInLazyConfigEnvironment) {
+define('eager-in-lazy/engine', ['exports', 'ember-engines/engine', 'ember-resolver', 'ember-load-initializers', 'eager-in-lazy/config/environment'], function (exports, _emberEnginesEngine, _emberResolver, _emberLoadInitializers, _eagerInLazyConfigEnvironment) {
   var modulePrefix = _eagerInLazyConfigEnvironment['default'].modulePrefix;
 
   var Eng = _emberEnginesEngine['default'].extend({
     modulePrefix: modulePrefix,
-    Resolver: _emberEnginesResolver['default']
+    Resolver: _emberResolver['default']
   });
 
   (0, _emberLoadInitializers['default'])(Eng, modulePrefix);

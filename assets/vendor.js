@@ -1,11 +1,7 @@
-/* jshint ignore:start */
-
 window.EmberENV = {"FEATURES":{},"EXTEND_PROTOTYPES":{"Date":false}};
 var runningTests = false;
 
 
-
-/* jshint ignore:end */
 
 ;// eager-in-eager/vendor/js/thisimport.js
 
@@ -71145,12 +71141,12 @@ createDeprecatedModule('resolver');
 define("eager-in-eager/eager-in-eager-import-target", ["exports"], function (exports) {
   exports["default"] = {};
 });
-define('eager-in-eager/engine', ['exports', 'ember-engines/engine', 'ember-engines/resolver', 'ember-load-initializers', 'eager-in-eager/config/environment'], function (exports, _emberEnginesEngine, _emberEnginesResolver, _emberLoadInitializers, _eagerInEagerConfigEnvironment) {
+define('eager-in-eager/engine', ['exports', 'ember-engines/engine', 'ember-resolver', 'ember-load-initializers', 'eager-in-eager/config/environment'], function (exports, _emberEnginesEngine, _emberResolver, _emberLoadInitializers, _eagerInEagerConfigEnvironment) {
   var modulePrefix = _eagerInEagerConfigEnvironment['default'].modulePrefix;
 
   var Eng = _emberEnginesEngine['default'].extend({
     modulePrefix: modulePrefix,
-    Resolver: _emberEnginesResolver['default']
+    Resolver: _emberResolver['default']
   });
 
   (0, _emberLoadInitializers['default'])(Eng, modulePrefix);
@@ -71227,12 +71223,12 @@ define('eager/eager-in-eager/tests/eager-in-eager/routes/eager-in-eager-route.li
     assert.ok(true, 'eager-in-eager/routes/eager-in-eager-route.js should pass ESLint.\n');
   });
 });
-define('eager/engine', ['exports', 'ember-engines/engine', 'ember-engines/resolver', 'ember-load-initializers', 'eager/config/environment'], function (exports, _emberEnginesEngine, _emberEnginesResolver, _emberLoadInitializers, _eagerConfigEnvironment) {
+define('eager/engine', ['exports', 'ember-engines/engine', 'ember-resolver', 'ember-load-initializers', 'eager/config/environment'], function (exports, _emberEnginesEngine, _emberResolver, _emberLoadInitializers, _eagerConfigEnvironment) {
   var modulePrefix = _eagerConfigEnvironment['default'].modulePrefix;
 
   var Eng = _emberEnginesEngine['default'].extend({
     modulePrefix: modulePrefix,
-    Resolver: _emberEnginesResolver['default']
+    Resolver: _emberResolver['default']
   });
 
   (0, _emberLoadInitializers['default'])(Eng, modulePrefix);
@@ -93726,9 +93722,5 @@ define('tree-invocation-order/routes', ['exports', 'ember-engines/routes', 'tree
 define("vanilla-addon-in-eager/utils/utils-in-vanilla-addon", ["exports"], function (exports) {
   exports["default"] = {};
 });
-;/* jshint ignore:start */
-
-
-
-/* jshint ignore:end */
+;
 //# sourceMappingURL=vendor.map
